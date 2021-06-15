@@ -6,8 +6,10 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - 8080:8080
     command: npm start
+    volumes:
+      - .:/app
 
   caddy:
     image: caddy:2.3.0
