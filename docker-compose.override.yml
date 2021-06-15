@@ -7,15 +7,15 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:8080
-    command: npm start
     volumes:
       - .:/app
+    command: npx nodos server -h 0.0.0.0
 
   caddy:
     image: caddy:2.3.0
     ports:
-      - "80:80"
-      - "443:443"
+      - 80:80
+      - 443:443
     volumes: 
       - "./services/caddy/Caddyfile:/etc/caddy/Caddyfile"
       - "./public:/etc/caddy/public"
