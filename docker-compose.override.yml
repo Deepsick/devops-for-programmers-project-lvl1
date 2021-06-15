@@ -2,8 +2,13 @@ version: "3.3"
 
 services: 
   app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
+    command: npm start
+
   caddy:
     image: caddy:2.3.0
     ports:
@@ -16,6 +21,7 @@ services:
       - caddy_config:/config
     depends_on: 
       - app
+        
 
 volumes:
   caddy_data:

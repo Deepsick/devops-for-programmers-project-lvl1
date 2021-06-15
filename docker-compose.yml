@@ -7,9 +7,13 @@ services:
     env_file: 
       - .env
     environment: 
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${NODOS_DB_PASSWORD}
+      POSTGRES_USER: ${NODOS_DB_USERNAME}
   app:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile.production
     depends_on: 
       - db
+    command: npm test
+        
