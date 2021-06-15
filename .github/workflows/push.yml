@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'master'
+      - 'main'
 
 env:
   APP_IMAGE_NAME: deepsick/devops-for-programmers-project-lvl1
