@@ -6,12 +6,22 @@
 
 Simple nodos project wrapped with docker
 
+## Required
+- docker
+- docker-compose
 
-## Usage
-
+## Develop
 ```bash
-docker-compose up [-d]
+make up
 ```
+
+## Testing
+```bash
+make ci
+```
+
+## Dockerhub image
+https://hub.docker.com/repository/docker/deepsick/devops-for-programmers-project-lvl1
 
 ## Contributing
 
