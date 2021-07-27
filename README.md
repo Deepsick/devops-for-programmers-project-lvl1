@@ -4,7 +4,7 @@
 
 # Dockerized nodos project
 
-Simple nodos project wrapped with docker
+Simple strapi project wrapped with docker
 
 ## Required
 - docker
