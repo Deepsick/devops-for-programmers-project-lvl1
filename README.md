@@ -2,9 +2,9 @@
 [![Actions Status](https://github.com/Deepsick/devops-for-programmers-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Deepsick/devops-for-programmers-project-lvl1/actions)
 [![Actions Status](https://github.com/Deepsick/devops-for-programmers-project-lvl1/workflows/push/badge.svg)](https://github.com/Deepsick/devops-for-programmers-project-lvl1/actions)
 
-# Dockerized nodos project
+# Dockerized Strapi project
 
-Simple nodos project wrapped with docker
+Simple strapi project wrapped with docker
 
 ## Required
 - docker
