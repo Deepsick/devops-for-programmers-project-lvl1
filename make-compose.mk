@@ -10,6 +10,9 @@ compose-build:
 compose-build-production:
 	docker build -f Dockerfile.production .
 
+compose-setup:
+	docker-compose run app npm i
+
 compose-test:
 	docker-compose -f docker-compose.yml up --build --abort-on-container-exit
 
